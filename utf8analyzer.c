@@ -125,5 +125,19 @@ int main(int argc, char *argv[]) {
     return result;
 }
 
+    //Alexis wrote the following
+    int capitalize_ascii(char str[]){
+        int count =0;
+        for (int i = 0; str[i] != '\0'; i++){
+                if (str[i] >= 'a' && str[i] <= 'z'){
+                        str[i] -= 32;
+                        count += 1;
+                }
+        }
+        return count;
+}
+    int string_length(constant char string[]){
+    	return (int) strlen(string);
+    }
 
 }
