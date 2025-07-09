@@ -11,4 +11,17 @@ int main(int argc, char *argv[]) {
     }
 
     // implement the UTF-8 analyzer here
+    const char* is_ascii(char str[]) {
+    for (int i = 0; str[i] != '\0'; i++) {
+        if ((unsigned char)str[i] >= 128) {
+            return "false";
+        }
+    }
+    return "true";
+}
+
+
+
+
+
 }
