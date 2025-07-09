@@ -20,7 +20,16 @@ int main(int argc, char *argv[]) {
     return "true";
 }
 
-
+    int capitalize_ascii(char str[]){
+	int count =0;
+	for (int i = 0; str[i] != '\0'; i++){
+		if (str[i] >= 'a' && str[i] <= 'z'){
+			str[i] -= 32;
+			count += 1;
+		}
+	}
+		return count;
+}
 
 
 
